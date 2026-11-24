@@ -20,6 +20,19 @@ a{color:#4dff7c}a:hover{color:#9dffb6}
 .ghost{background:transparent;color:#4dff7c;border:2px solid #4dff7c;border-radius:999px;font-family:'Exo 2',sans-serif;font-weight:800;cursor:pointer;text-decoration:none}
 .ghost:hover{background:rgba(77,255,124,.12);color:#9dffb6}
 .nav a{color:#d7dbe0;text-decoration:none}.nav a:hover{color:#4dff7c}
+@media (max-width:600px){
+.hdr{padding:12px 16px!important;gap:10px!important}
+.hdr .pill{font-size:16px!important;padding:4px 16px 5px!important}
+.hdr nav{gap:14px!important;font-size:14px!important;order:3;width:100%}
+.hdr button{padding:6px 14px!important;font-size:14px!important}
+.hero{padding:12px 16px 24px!important;gap:20px!important}
+.hero h1{font-size:38px!important}
+.hero p{font-size:16px!important}
+.hero a{padding:12px 22px!important;font-size:16px!important}
+.benefits{grid-template-columns:1fr 1fr!important;padding:16px!important;gap:14px!important}
+.benefits div div+div{display:none}
+#proizvodi{padding-top:32px!important}
+}
 </style>
 
 </head>
@@ -30,7 +43,7 @@ a{color:#4dff7c}a:hover{color:#9dffb6}
 
 <div style="background: #4dff7c; color: #0e0f11; text-align: center; font-weight: 600; font-size: 14px; padding: 8px 16px">Diskretno pakovanje · Besplatna dostava za 5 kutija · Samo za punoletne (18+)</div>
 
-<header style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<header class="hdr" style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
 <a href="#pocetna" style="display: flex; flex-direction: column; gap: 4px; text-decoration: none; line-height: 1">
 <span class="pill" style="font-size: 24px">NEON</span>
 <span class="pill" style="font-size: 24px; margin-left: 18px">ZONA</span>
@@ -48,7 +61,7 @@ a{color:#4dff7c}a:hover{color:#9dffb6}
 </button>
 </header>
 
-<section id="pocetna" style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<section id="pocetna" class="hero" style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
 <div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 24px">
 <span style="color: #4dff7c; font-weight: 800; letter-spacing: .14em; font-size: 14px; text-transform: uppercase">Online prodavnica kondoma</span>
 <h1 style="margin: 0; font-family: 'Russo One', sans-serif; font-size: clamp(40px, 6vw, 72px); line-height: 1.02; color: #ffffff">Upali <span style="color: #4dff7c; text-shadow: 0 0 24px rgba(77,255,124,.6); font-style: italic">zeleno</span> svetlo.</h1>
@@ -58,22 +71,10 @@ a{color:#4dff7c}a:hover{color:#9dffb6}
 <a class="ghost" href="#paketi" style="padding: 14px 30px; font-size: 18px; display: inline-flex; align-items: center; min-height: 44px">Uštedi na paketima</a>
 </div>
 </div>
-<div style="flex: 1 1 380px; display: flex; justify-content: center">
-<div class="foil" style="width: 100%; max-width: 420px; transform: rotate(-6deg); box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 80px rgba(77,255,124,.18)">
-<div class="foil-in" style="aspect-ratio: 1 / 1; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between">
-<div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start">
-<span class="pill" style="font-size: 46px">NEON</span>
-<span class="pill" style="font-size: 46px">ZONA</span>
-<span style="font-family: 'Russo One', sans-serif; color: #e9ecef; letter-spacing: .12em; font-size: 18px; padding-left: 10px">ULTRA LIGHT</span>
-</div>
-<div style="display: flex; justify-content: flex-end; color: #e9ecef; font-weight: 800; font-size: 16px">CE · 0123</div>
-</div>
-</div>
-</div>
 </section>
 
 <section style="border-top: 1px solid #2c3035; border-bottom: 1px solid #2c3035; background: #1c1f22">
-<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px">
+<div class="benefits" style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px">
 <div style="display: flex; gap: 14px; align-items: flex-start">
 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4dff7c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
 <div><div style="font-weight: 800; font-size: 17px">CE sertifikovano</div><div style="color: #a9afb6; font-size: 15px; margin-top: 4px">Samo proizvodi sa CE oznakom</div></div>
